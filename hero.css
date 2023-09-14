@@ -1,0 +1,164 @@
+html
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: normal;
+  background-color: antiquewhite;
+  color: #E5E5E5; 
+} 
+
+header {
+  background-color: #052E5B;
+  padding: 40px;
+  text-align: center;
+}
+
+
+h1 {
+  font-family: Playfair Display, serif;
+  font-size:70px;
+  color: #E5E5E5;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+h2 {
+  font-family: Playfair Display, serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #072F5B;
+  
+}
+
+ @keyframes rubberband {
+       0% {
+        transform: scaleX(1);
+      }
+      10% {
+        transform: scaleX(1.2); 
+      }
+      20% {
+        transform: scaleX(0.8); 
+      }
+      30% {
+        transform: scaleX(1.1);
+      }
+      40% {
+        transform: scaleX(0.9); 
+      }
+      50% {
+        transform: scaleX(2); 
+      }
+      60% {
+        transform: scaleX(0.95); 
+      }
+      70% {
+        transform: scaleX(1.03); 
+      }
+      80% {
+        transform: scaleX(0.97); 
+      }
+      90% {
+        transform: scaleX(1.01); 
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+
+    h1:hover{
+      animation: rubberband 3s ease infinite;
+      transform-origin: center;
+    }
+header img {
+  border-radius: 170px;
+  width: 300px;
+  border: 20px solid #8D532B;
+  position: relative;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #8D5226;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 2);
+  text-align: center;
+}
+
+ol{
+  list-style-type: 1;
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+} 
+
+ul{
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+img.big_image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; 
+  border-radius: 30px;
+}
+.zoom-wrapper{
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.zoom-wrapper img {
+  object-fit: cover;
+  transition: transform 0.8s;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.zoom-wrapper:hover img {
+  transform: scale(1.2);
+  border-radius: 50px;
+}
+
+p.caption {
+  font-size: 16px;
+  color: #BCBCBC; 
+  font-style: italic;
+}
+
+
+footer {
+  margin-top: 20px;
+  padding: 40px 20px;
+  background-color: #0C2E55;
+  text-align: center; 
+}
+
+footer ul {
+  text-align: center;
+  margin-top: 10px; 
+}
+
+footer ul li {
+  display: inline-block;
+  margin:  10px;
+  color: #F1F1F1;
+  font-family: Verdana; 
+}
+
+
+footer a {
+  color: #A47900; 
+  text-decoration: none;
+  font-weight: bold;
+}
